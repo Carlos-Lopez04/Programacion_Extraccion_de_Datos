@@ -1,3 +1,7 @@
+import requests
+import pandas as pd
+from tkinter import messagebox
+
 #Colores para los botones de la ventana
 
 COLOR_FONDO = "#f8f9fa"
