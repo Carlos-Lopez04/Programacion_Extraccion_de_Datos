@@ -1,0 +1,16 @@
+import subprocess #Con este se debe importar el dashboard
+
+
+#Llama el Dashboard al codigo de interfaz 
+def abrir_dashboard():
+    subprocess.Popen(["python", "tmdb_dashboard.py"])
+
+#Este va en el def de los botones 
+btn_dashboard = crear_boton(
+    content_frame,
+    "🌐 Abrir Dashboard Interactivo",
+    abrir_dashboard,
+    COLOR_ACENTO,
+    "#f59e0b"
+)
+btn_dashboard.pack(fill=X, pady=10, ipady=5)
